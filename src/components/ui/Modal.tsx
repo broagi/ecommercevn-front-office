@@ -10,7 +10,7 @@ export const Modal = (props:any) => {
     router.back()
   }, [router])
 
-  return <div className="relative z-10" role="dialog" aria-modal="true">
+  return <div className="relative z-50" role="dialog" aria-modal="true">
   <div className="fixed inset-0 hidden bg-gray-500 bg-opacity-75 transition-opacity md:block"></div>
 
   <div className="fixed inset-0 z-10 w-screen overflow-y-auto">

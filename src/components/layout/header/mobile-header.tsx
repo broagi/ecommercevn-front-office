@@ -1,12 +1,14 @@
 'use client';
 import { Transition } from "@headlessui/react";
 import Link from "next/link"
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMobileMenu = () => setIsOpen(true);
   const closeMobileMenu = () => setIsOpen(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,6 +19,10 @@ export const MobileMenu = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [isOpen]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return <>
   <button onClick={openMobileMenu} type="button" className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden">
@@ -44,28 +50,28 @@ export const MobileMenu = () => {
 
       <div className="space-y-6 border-gray-200 px-4 py-6">
         <div className="flow-root">
-          <Link href="/products" className="-m-2 block p-2 text-gray-900">Producs</Link>
+          <Link href="/products" onClick={closeMobileMenu} className="-m-2 block p-2 text-gray-900">Producs</Link>
         </div>
         <div>
               <p id="women-clothing-heading-mobile" className="font-medium text-gray-900">Categories</p>
               <ul role="list" aria-labelledby="women-clothing-heading-mobile" className="mt-6 flex flex-col space-y-6">
                 <li className="flow-root">
-                  <a href="#" className="-m-2 block p-2 text-gray-500">Women</a>
+                  <Link href="/products"  onClick={closeMobileMenu}  className="-m-2 block p-2 text-gray-500">Women</Link>
                 </li>
                 <li className="flow-root">
-                  <a href="#" className="-m-2 block p-2 text-gray-500">Women</a>
+                  <Link href="/products"  onClick={closeMobileMenu}  className="-m-2 block p-2 text-gray-500">Women</Link>
                 </li>
                 <li className="flow-root">
-                  <a href="#" className="-m-2 block p-2 text-gray-500">Women</a>
+                  <Link href="/products"  onClick={closeMobileMenu}  className="-m-2 block p-2 text-gray-500">Women</Link>
                 </li>
 
               </ul>
             </div>
         <div className="flow-root">
-          <Link href="/contact" className="-m-2 block p-2 text-gray-900">Contact</Link>
+          <Link href="/contact"  onClick={closeMobileMenu}  className="-m-2 block p-2 text-gray-900">Contact</Link>
         </div>
         <div className="flow-root">
-          <Link href="/about-us" className="-m-2 block p-2 text-gray-900">About Us</Link>
+          <Link href="/about-us" onClick={closeMobileMenu}  className="-m-2 block p-2 text-gray-900">About Us</Link>
         </div>
       </div>
 

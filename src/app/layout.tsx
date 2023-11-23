@@ -24,8 +24,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <Main>
-          {children}
           {modal}
+          {children}
         </Main>
         <Footer />
       </body>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const ProductCategoriies = () => {
@@ -5,9 +6,10 @@ export const ProductCategoriies = () => {
     <div className="grid grid-cols-2 gap-4 py-5">
       <Link href="/products">
         <div className="relative group flex justify-center items-center h-48 overflow-hidden w-full">
-          <img
+          <Image
             className="object-center object-cover w-full"
-            src="https://i.ibb.co/ThPFmzv/omid-armin-m-VSb6-PFk-VXw-unsplash-1-1.png"
+            src="/images/girl.png"
+            fill
             alt="girl-image"
           />
           <button  className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
@@ -18,9 +20,10 @@ export const ProductCategoriies = () => {
       </Link>
       <Link href="/products">
         <div className="relative group flex justify-center items-center h-48 overflow-hidden w-full">
-          <img
+          <Image
             className="object-center object-cover h-full w-full"
-            src="https://i.ibb.co/ThPFmzv/omid-armin-m-VSb6-PFk-VXw-unsplash-1-1.png"
+            src="/images/girl.png"
+            fill
             alt="girl-image"
           />
           <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
@@ -31,9 +34,10 @@ export const ProductCategoriies = () => {
       </Link>
       <Link href="/products">
         <div className="relative group flex justify-center items-center h-48 overflow-hidden w-full">
-          <img
+          <Image
             className="object-center object-cover h-full w-full"
-            src="https://i.ibb.co/ThPFmzv/omid-armin-m-VSb6-PFk-VXw-unsplash-1-1.png"
+            src="/images/girl.png"
+            fill
             alt="girl-image"
           />
           <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
@@ -44,9 +48,10 @@ export const ProductCategoriies = () => {
       </Link>
       <Link href="/products">
         <div className="relative group flex justify-center items-center h-48 overflow-hidden w-full">
-          <img
+          <Image
             className="object-center object-cover h-full w-full"
-            src="https://i.ibb.co/ThPFmzv/omid-armin-m-VSb6-PFk-VXw-unsplash-1-1.png"
+            src="/images/girl.png"
+            fill
             alt="girl-image"
           />
           <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">

@@ -11,9 +11,10 @@ export const Header = () => {
         <div className="flex h-16 items-center">
         <MobileMenu />
 
+
           <div className="ml-4 flex lg:ml-0">
             <Link href="/">
-              <img className="w-10" src="/next.svg" alt="" />
+              <img className="w-10 h-10" src="/next.svg" alt="" />
             </Link>
           </div>
 
