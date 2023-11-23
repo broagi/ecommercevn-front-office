@@ -1,7 +1,7 @@
 export default function AboutUs() {
   return (
-    <div>
-      <h2>About Us</h2>
+    <div className="bg-cover bg-center  h-auto text-black py-24 px-10 object-fill">
+      <h2 className="text-3xl"><strong>About Us</strong></h2>
       <br />
       <div id="Translation">
         <h3>The standard Lorem Ipsum passage, used since the 1500s</h3>

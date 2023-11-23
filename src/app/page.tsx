@@ -1,12 +1,10 @@
 'use client';
-import { Modal } from '@components/ui/Modal'
 import { ProductCategoriies } from '@components/ui/ProductCategories'
 import Image from 'next/image'
+import Link from 'next/link';
 import { useState } from 'react'
 
 export default function Home() {
-  const [show, setShow] = useState(false);
-
   return (
     <div className="">
       <div className="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)'}}>
@@ -24,35 +22,34 @@ export default function Home() {
     </div>
 
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-        <a href="#" className="group" onClick={()=> setShow(true)}>
+        <Link href="/products/1" className="group" scroll={false}>
           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." className="h-full w-full object-cover object-center group-hover:opacity-75" />
           </div>
           <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
           <p className="mt-1 text-lg font-medium text-gray-900">$48</p>
-        </a>
-        <a href="#" className="group" onClick={()=> setShow(true)}>
+        </Link>
+        <Link href="/products/1" className="group" scroll={false}>
           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." className="h-full w-full object-cover object-center group-hover:opacity-75"/>
           </div>
           <h3 className="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
           <p className="mt-1 text-lg font-medium text-gray-900">$35</p>
-        </a>
-        <a href="#" className="group" onClick={()=> setShow(true)}>
+        </Link>
+        <Link href="/products/1" className="group" scroll={false}>
           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." className="h-full w-full object-cover object-center group-hover:opacity-75"/>
           </div>
           <h3 className="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
           <p className="mt-1 text-lg font-medium text-gray-900">$89</p>
-        </a>
-        <a href="#" className="group" onClick={()=> setShow(true)}>
+        </Link>
+        <Link href="/products/1" className="group" scroll={false}>
           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." className="h-full w-full object-cover object-center group-hover:opacity-75"/>
           </div>
           <h3 className="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
           <p className="mt-1 text-lg font-medium text-gray-900">$35</p>
-        </a>
-
+        </Link>
       </div>
     </div>
 
@@ -72,7 +69,7 @@ export default function Home() {
           <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
         </div>
         <div className="relative mt-8 flex items-center gap-x-4">
-          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50"/>
+          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50"/>
           <div className="text-sm leading-6">
             <p className="font-semibold text-gray-900">
               <a href="#">
@@ -99,7 +96,7 @@ export default function Home() {
           <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
         </div>
         <div className="relative mt-8 flex items-center gap-x-4">
-          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50"/>
+          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50"/>
           <div className="text-sm leading-6">
             <p className="font-semibold text-gray-900">
               <a href="#">
@@ -126,7 +123,7 @@ export default function Home() {
           <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
         </div>
         <div className="relative mt-8 flex items-center gap-x-4">
-          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50"/>
+          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="h-10 w-10 rounded-full bg-gray-50"/>
           <div className="text-sm leading-6">
             <p className="font-semibold text-gray-900">
               <a href="#">
@@ -140,7 +137,6 @@ export default function Home() {
       </article>
 
     </div>
-    <Modal show={show} onCancel={() => setShow(false)} />
     </div>
   )
 }

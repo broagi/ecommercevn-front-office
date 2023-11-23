@@ -1,5 +1,16 @@
-export const Modal = ({show, onCancel}) => {
-  return <div hidden={!show} className="relative z-10" role="dialog" aria-modal="true">
+'use client';
+
+import { useRouter } from "next/navigation";
+import { useCallback } from "react";
+
+export const Modal = (props:any) => {
+  const router = useRouter();
+
+  const onDismiss = useCallback(() => {
+    router.back()
+  }, [router])
+
+  return <div className="relative z-10" role="dialog" aria-modal="true">
   <div className="fixed inset-0 hidden bg-gray-500 bg-opacity-75 transition-opacity md:block"></div>
 
   <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
@@ -7,7 +18,7 @@ export const Modal = ({show, onCancel}) => {
 
       <div className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
         <div className="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
-          <button onClick={onCancel} type="button" className="absolute right-4 top-4 text-gray-400 hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8">
+          <button onClick={onDismiss} type="button" className="absolute right-4 top-4 text-gray-400 hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8">
             <span className="sr-only">Close</span>
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
