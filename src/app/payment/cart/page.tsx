@@ -2,7 +2,7 @@ export default function PaymentCart() {
   return (
     <div className="inset-0 overflow-hidden ">
       <>
-        <div className="pointer-events-none inset-y-0 right-0 flex max-w-full relative min-h-screen sm:flex flex-wrap">
+        <div className="inset-y-0 right-0 flex max-w-full relative min-h-screen sm:flex flex-wrap">
           <>
             <div className="lg:w-8/12  md:w-6/12 w-full flex sm:absolute left-0 h-screen flex-col overflow-y-scroll bg-white shadow-xl">
               <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6 w-full">
@@ -24,7 +24,7 @@ export default function PaymentCart() {
                           type="text"
                           name="first-name"
                           id="first-name"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-  00 sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
@@ -38,7 +38,7 @@ export default function PaymentCart() {
                           type="text"
                           name="last-name"
                           id="last-name"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
@@ -52,7 +52,7 @@ export default function PaymentCart() {
                           id="email"
                           name="email"
                           type="email"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
@@ -65,7 +65,7 @@ export default function PaymentCart() {
                         <select
                           id="country"
                           name="country"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-2.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:max-w-xs sm:text-sm sm:leading-6"
                         >
                           <option>United States</option>
                           <option>Canada</option>
@@ -83,7 +83,7 @@ export default function PaymentCart() {
                           type="text"
                           name="street-address"
                           id="street-address"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
@@ -97,7 +97,7 @@ export default function PaymentCart() {
                           type="text"
                           name="city"
                           id="city"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
@@ -111,7 +111,7 @@ export default function PaymentCart() {
                           type="text"
                           name="region"
                           id="region"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
@@ -125,7 +125,7 @@ export default function PaymentCart() {
                           type="text"
                           name="postal-code"
                           id="postal-code"
-                          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:text-sm sm:leading-6"
                         />
                       </div>
                     </div>
