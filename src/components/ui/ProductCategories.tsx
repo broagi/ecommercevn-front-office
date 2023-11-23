@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const ProductCategoriies = () => {
   return (
-    <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 py-5">
+    <div className="grid grid-cols-2 gap-4 py-5">
       <Link href="/products">
         <div className="relative group flex justify-center items-center h-48 overflow-hidden w-full">
           <img
