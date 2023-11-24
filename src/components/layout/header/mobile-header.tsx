@@ -50,7 +50,7 @@ export const MobileMenu = () => {
 
       <div className="space-y-6 border-gray-200 px-4 py-6">
         <div className="flow-root">
-          <Link href="/products" onClick={closeMobileMenu} className="-m-2 block p-2 text-gray-900">Producs</Link>
+          <Link href="/products" onClick={closeMobileMenu} className="-m-2 block p-2 font-medium text-gray-900">Producs</Link>
         </div>
         <div>
               <p id="women-clothing-heading-mobile" className="font-medium text-gray-900">Categories</p>
@@ -68,10 +68,10 @@ export const MobileMenu = () => {
               </ul>
             </div>
         <div className="flow-root">
-          <Link href="/contact"  onClick={closeMobileMenu}  className="-m-2 block p-2 text-gray-900">Contact</Link>
+          <Link href="/contact"  onClick={closeMobileMenu}  className="-m-2 block p-2 font-medium text-gray-900">Contact</Link>
         </div>
         <div className="flow-root">
-          <Link href="/about-us" onClick={closeMobileMenu}  className="-m-2 block p-2 text-gray-900">About Us</Link>
+          <Link href="/about-us" onClick={closeMobileMenu}  className="-m-2 block p-2 font-medium text-gray-900">About Us</Link>
         </div>
       </div>
 
